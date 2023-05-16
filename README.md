@@ -29,7 +29,7 @@ The website is deployed [here](wait_for_deployment).
 
 
 ## Authors
-- [@ayeesha](https://www.github.com/ayeesha)
+- [@ayeesha](https://github.com/Ayeeshaanchi)
 - [@sonukuldeep](https://www.github.com/sonukuldeep)
 
 
