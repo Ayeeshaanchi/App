@@ -36,3 +36,13 @@ The website is deployed [here](wait_for_deployment).
 ## 🛠 Skills
 
 [![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,tailwind,sass,nodejs,react,vue,flask,rust,python,php,solidity,mongodb,mysql,prisma,figma)](https://github.com/donald-gg)
+
+### Font used 
+- DM Serif Display Designed by Colophon Foundry 400I
+- Nunito Designed by Vernon Adams, Cyreal, Jacques Le Bailly 400 600 700
+
+Use:-
+```
+font-family: 'DM Serif Display', serif;
+font-family: 'Nunito', sans-serif;
+```
