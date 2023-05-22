@@ -1,0 +1,12 @@
+<button class="btn p-2 m-2">
+    <%= text %>
+</button>
+
+<script>
+    document.querySelector('button.btn').addEventListener('click', onClickHandler);
+
+    function onClickHandler(e) {
+        e.preventDefault();
+        console.log(e.target);
+    }
+</script>
