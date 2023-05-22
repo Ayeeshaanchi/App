@@ -2,3 +2,14 @@
     --btn-primary: #27b1d9;
     --btn-secondary: #15be7d;
 }
+
+.spacing-x {
+    margin-inline: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .spacing-x {
+        margin-inline: 30px;
+    }
+}
+    
