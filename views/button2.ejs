@@ -1,0 +1,34 @@
+<style>
+    .btn2 {
+        padding: 13px 30px;
+        border-radius: 100px;
+        background-color: var(--btn-primary);
+        -webkit-transition: background-color 300ms cubic-bezier(.215, .61, .355, 1);
+        transition: background-color 300ms cubic-bezier(.215, .61, .355, 1);
+        color: #fff;
+        font-size: 17px;
+        line-height: 1.2em;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .btn2:hover {
+        background-color: var(--btn-secondary);
+    }
+</style>
+
+
+<button class="btn2">
+    <%= text %>
+</button>
+
+
+<script>
+    document.querySelector('button.btn2').addEventListener('click', onClickHandler);
+
+    function onClickHandler(e) {
+        e.preventDefault();
+        console.log(e.target);
+    }
+</script>

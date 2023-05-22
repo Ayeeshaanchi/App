@@ -1,0 +1,35 @@
+<style>
+    .btn {
+        margin: 2px;
+        background-color: var(--btn-primary);
+        color: aliceblue;
+        padding: 19px 44px;
+        border-radius: 100px;
+        -webkit-transition: background-color 300ms cubic-bezier(.215, .61, .355, 1);
+        transition: background-color 300ms cubic-bezier(.215, .61, .355, 1);
+        font-size: 17px;
+        line-height: 1.2em;
+        font-weight: 600;
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .btn:hover {
+        background-color: var(--btn-secondary);
+    }
+</style>
+
+
+<button class="btn">
+    <%= text %>
+</button>
+
+
+<script>
+    document.querySelector('button.btn').addEventListener('click', onClickHandler);
+
+    function onClickHandler(e) {
+        e.preventDefault();
+        console.log(e.target);
+    }
+</script>

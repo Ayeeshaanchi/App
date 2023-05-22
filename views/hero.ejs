@@ -1,0 +1,113 @@
+<style>
+    section.hero {
+        min-height: 100vh;
+        background-color: #eaf9fa;
+        background-image: linear-gradient(145deg, #eaf9fa, #a3ebf0);
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+        overflow: hidden;
+    }
+    .hero .header {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .hero .header h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'DM Serif Display', sans-serif;
+        color: #0a2046;
+        font-size: 71px;
+        line-height: 1.05em;
+        font-weight: 400;
+    }
+
+    .hero .header h2 {
+        font-family: Nunito, sans-serif;
+        color: #475874;
+        font-size: 17px;
+        line-height: 1.8em;
+        font-weight: 400;
+    }
+
+    .hero .image-container {
+        position: relative;
+        height: 100%;
+        /* background-color: #0a2046; */
+    }
+
+    .hero .image-container img {
+        border: 3px solid white;
+        border-radius: 8px;
+        position: absolute;
+    }
+
+    .hero .image-container img:nth-child(1) {
+        top: -200px;
+        left: 20px;
+        width: clamp(192px, 22vw, 280px);
+    }
+
+    .hero .image-container img:nth-child(2) {
+        top: -35px;
+        right: 13px;
+        width: 23vw;
+        width: clamp(200px, 22vw, 300px);
+    }
+
+    .hero .image-container img:nth-child(3) {
+        top: 158px;
+        left: 148px;
+        width: 19vw;
+        width: clamp(170px, 19vw, 250px);
+    }
+
+    .hero .image-container img:nth-child(4) {
+        top: 261px;
+        left: 627px;
+        width: 20vw;
+        width: clamp(170px, 20vw, 230px);
+        z-index: 10;
+    }
+
+    .hero .image-container img:nth-child(5) {
+        bottom: -100px;
+        left: -40px;
+        width: 20vw;
+        width: clamp(210px, 20vw, 240px);
+    }
+
+    .hero .image-container img:nth-child(6) {
+        bottom: -76px;
+        right: 229px;
+        width: 22vw;
+        width: clamp(230px, 22vw, 270px);
+    }
+
+    @media screen and (min-width: 768px) {
+        section.hero {
+            grid-template-columns: 0.7fr 1fr;
+        }
+    }
+</style>
+<section class="hero">
+    <!-- Left half -->
+    <div class="header spacing-x">
+        <h1>Get ready for your best ever <span style="color: var(--btn-primary);">dental experience!</span></h1>
+        <h2>We use only the best quality materials on the market in order to provide the best products to our patients
+        </h2>
+        <%- include('button', {text: "Our Services" }) %>
+    </div>
+    <!-- right half -->
+    <div class="image-container">
+        <img src="/assets/images/5f29f16ff5fb1630e05f69f2_hero_2_1.jpg" alt="">
+        <img src="/assets/images/5f29f16f14bd383c98695a5c_hero_2_6.jpg" alt="">
+        <img src="/assets/images/5f29f16f69ed952591bbb337_hero_2_2.jpg" alt="">
+        <img src="/assets/images/5f29f16fe162131dde6125b6_hero_2_3.jpg" alt="">
+        <img src="/assets/images/5f29f16f669e3153f28931e6_hero_2_4.jpg" alt="">
+        <img src="/assets/images/5f29f16f048f4a7eb1d14df7_hero_2_5.jpg" alt="">
+
+    </div>
+</section>
