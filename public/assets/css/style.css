@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Nunito', 'sans-serif';
+    color: #475874;
+    font-size: 17px;
+    line-height: 1.8em;
+    font-weight: 400;
+}

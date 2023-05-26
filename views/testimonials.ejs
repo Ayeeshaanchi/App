@@ -1,0 +1,61 @@
+<style>
+    #testimonials {
+        display: flex;
+        padding: 60px 26px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    #testimonials h4 {
+        font-size: 16px;
+        line-height: 1.2em;
+        font-weight: 700;
+        color: #15be7d;
+    }
+
+    #testimonials h2 {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-family: 'DM Serif Display', sans-serif;
+        color: #0a2046;
+        font-size: 52px;
+        line-height: 1.15em;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #testimonials .cards {
+        width: 100%;
+        margin-inline: 35px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        align-items: start;
+        column-gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    #testimonials .center {
+        display: flex;
+        justify-content: center;
+    }
+
+</style>
+<section id="testimonials">
+    <h4>Testimonials</h4>
+    <h2>Exceptionally high<br />
+        standards of dentistry</h2>
+    <div class="cards">
+        <% blog_data.testimonials.forEach(item=> { %>
+            <%- include('card', {item}) %>
+                <% }) %>
+    </div>
+
+    <div class="center">
+        <%- include('button', {text: "More Testimonials"}) %>
+    </div>
+
+</section>
