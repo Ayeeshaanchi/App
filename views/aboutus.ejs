@@ -1,0 +1,67 @@
+<style>
+    #about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 0 35px; */
+        padding: 60px 35px;
+        column-gap: 30px;
+        background-color: #eaf9fa;
+    }
+
+    #about div:first-child img {
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #fff;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 20px 70px -10px rgba(10, 32, 70, 0.3);
+        object-fit: cover;
+    }
+
+    #about .right {
+        display: flex;
+        padding: 50px 12%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #about .right h4 {
+        font-size: 16px;
+        line-height: 1.2em;
+        font-weight: 700;
+        color: #15be7d;
+        font-family: 'Nunito', 'sans-serif';
+    }
+
+    #about .right h2 {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-family: 'DM Serif Display', 'sans-serif';
+        color: #0a2046;
+        font-size: 52px;
+        line-height: 1.15em;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    #about .right p {
+        margin-bottom: 35px;
+    }
+</style>
+
+<section id="about">
+    <div class="left"><img src="assets/images/5f38a6c03eba5dc3053347ab_welcome.jpg" alt="image"></div>
+    <div class="right">
+        <h4>Welcome</h4>
+        <h2>Leave your worries at the door and enjoy a healthier, more precise smile</h2>
+        <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam
+            eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus</p>
+        <%- include('button', {text: "About Us" }) %>
+    </div>
+</section>

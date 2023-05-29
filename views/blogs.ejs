@@ -42,18 +42,19 @@
         padding: 20px;
     }
 </style>
-
-<ul class="blog_cards">
-    <% blog_data.items.forEach(item=>{ %>
-        <li class="blog_container">
-            <img src="<%= item.image %>" alt="<%= item.price %>">
-            <h2 class="heading">
-                <%= item.heading %>
-            </h2>
-            <p class="para">
-                <%= item.para %>
-            </p>
-            <%- include('button2', {text: "Read More"}) %>
-        </li>
-        <% }) %>
-</ul>
+<section>
+    <ul class="blog_cards">
+        <% blog_data.items.forEach(item=>{ %>
+            <li class="blog_container">
+                <img src="<%= item.image %>" alt="<%= item.price %>">
+                <h2 class="heading">
+                    <%= item.heading %>
+                </h2>
+                <p class="para">
+                    <%= item.para %>
+                </p>
+                <%- include('button2', {text: "Read More"}) %>
+            </li>
+            <% }) %>
+        </ul>
+</section>
